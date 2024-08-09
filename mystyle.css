@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    /*background-color: cadetblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.navright{
+    /*background-color: chartreuse;*/
+    display: flex;
+}
+.navlogo{
+    margin-top: 10px;
+}
+.navlinks{
+    /*background-color:grey*/
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    nav{
+        margin: 0px 10px;
+    }
+
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+nav{
+    margin-right: 30px;
+}
+
+regbtn{
+    background-color: transparent;
+        border: 1px solid lightgray;
+        height: 35px;
+        width: 80px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+}
+
+
+.navMenu{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navlinks{
+        display: none;
+    }
+    .navleft{
+        display: none;
+    }
+    .navMenu{
+        display: block;
+    }
+    
+    .heros{display: block;
+        /*flex-wrap:wrap-reverse;*/
+        flex-direction: column-reverse;
+}
+}
+.heros{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 150px;    
+}
+.textBox{
+    width: 50%;
+    color:black;
+    text-align:left;
+    flex-wrap: wrap;
+}
+.heros h1{
+    font-size: 40px;
+}
+.heros p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+#btn{
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        height: 35px;
+        width: 90px;
+        border-radius: 10px;
+}        
